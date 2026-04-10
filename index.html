@@ -1,3 +1,39 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login básico</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="card" id="login-card">
+        <h1 class="title">Iniciar sesión</h1>
+        <form id="loginForm" class="form">
+          <label for="username">Usuario</label>
+          <input id="username" name="username" type="text" placeholder="ej. demo" autocomplete="username">
+
+          <label for="password">Contraseña</label>
+          <input id="password" name="password" type="password" placeholder="ej. 1234" autocomplete="current-password">
+
+          <div id="message" class="message" aria-live="polite"></div>
+
+          <button type="submit" class="btn">Entrar</button>
+        </form>
+        <p class="hint">Usuario de demo: <strong>demo</strong> / Contraseña: <strong>1234</strong></p>
+      </section>
+
+      <section class="card hidden" id="dashboard">
+        <h2>Bienvenido</h2>
+        <p id="welcomeText"></p>
+        <button id="logoutBtn" class="btn secondary">Cerrar sesión</button>
+      </section>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
 <html>
     <head>
 
@@ -5,6 +41,7 @@
     <body>
         <h1>Hola ESAN</h1>
         <button>Enviar</button>
+        <h2>Bienvenido a la universidad</h2>
 
     </body>
     <footer>
